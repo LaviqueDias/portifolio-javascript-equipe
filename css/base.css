@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --header-h: 72px
+}
+
+@media (max-width:480px) {
+    :root {
+        --header-h: 56px
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    padding-top: var(--header-h);
+}
