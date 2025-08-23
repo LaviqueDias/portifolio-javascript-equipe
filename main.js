@@ -11,5 +11,5 @@ document.addEventListener('DOMContentLoaded', function() {
     loadComponent('header', 'components/header.html');
     loadComponent('hero', 'components/hero.html');
     loadComponent('about-us', 'components/about-us.html');
-    // loadComponent('section-lavique', 'components/section-lavique.html');
+    loadComponent('section-lavique', 'components/section-lavique.html');
 });
