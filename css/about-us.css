@@ -1,0 +1,43 @@
+.about-us {
+    padding: 4rem 1rem;
+    background: #fff;
+    color: #333;
+}
+
+.about-us .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1e3c72;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .about-us .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 2rem;
+    }
+}
