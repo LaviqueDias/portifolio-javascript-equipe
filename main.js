@@ -12,4 +12,5 @@ document.addEventListener('DOMContentLoaded', function() {
     loadComponent('hero', 'components/hero.html');
     loadComponent('about-us', 'components/about-us.html');
     loadComponent('section-lavique', 'components/section-lavique.html');
+    loadComponent('text-members', 'components/text-members.html');
 });
