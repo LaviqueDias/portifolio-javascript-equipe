@@ -15,4 +15,5 @@ document.addEventListener('DOMContentLoaded', function() {
     loadComponent('section-kevyn', 'components/section-kevyn.html');
     loadComponent('text-members', 'components/text-members.html');
     loadComponent('progress', 'components/progress.html');
+    loadComponent('footer', 'components/footer.html');
 });
