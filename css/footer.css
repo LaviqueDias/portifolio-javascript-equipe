@@ -73,3 +73,9 @@
 .copyright p {
   margin: 0;
 }
+
+@media screen and (max-width: 600px) {
+  .links {
+    gap: 10px;
+  }
+}
