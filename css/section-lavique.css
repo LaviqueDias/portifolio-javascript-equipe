@@ -18,7 +18,7 @@
 .member-container {
     background: var(--white);
     color: var(--text);
-    width: min(1000px, 94vw);
+    width: min(1000px, 91vw);
     border-radius: var(--radius);
     box-shadow: var(--card-shadow);
     padding: clamp(1.25rem, 4vw, 2.5rem);

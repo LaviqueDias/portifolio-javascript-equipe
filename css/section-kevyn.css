@@ -15,7 +15,7 @@
     place-items: center;
 }
 
-.member-container {
+/* .member-container {
     background: var(--white);
     color: var(--text);
     width: min(1000px, 94vw);
@@ -24,7 +24,7 @@
     padding: clamp(1.25rem, 4vw, 2.5rem);
     display: grid;
     gap: 2rem;
-}
+} */
 
 .member-header {
     display: grid;
