@@ -7,6 +7,20 @@ function loadComponent(targetId, filePath, callback) {
         });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    loadComponent('header', 'components/header.html');
+    loadComponent('hero', 'components/hero.html');
+    loadComponent('about-us', 'components/about-us.html');
+    loadComponent('section-lavique', 'components/section-lavique.html');
+    loadComponent('section-kevyn', 'components/section-kevyn.html');
+    loadComponent('section-esdras', 'components/section-esdras.html');
+    loadComponent('text-members', 'components/text-members.html');
+    loadComponent('progress', 'components/progress.html');
+    loadComponent('footer', 'components/footer.html');
+
+    loadComponent('newsletter', 'components/newsletter.html', initContactForm);
+});
+
 function initContactForm() {
     const form = document.getElementById('contactForm');
     if (!form) return;
@@ -38,30 +52,21 @@ function initContactForm() {
         return valid;
     }
 
-    fullName.addEventListener('input', validateFields);
-    email.addEventListener('input', validateFields);
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
         formSuccess.textContent = '';
+        formSuccess.classList.remove('visible');
 
         if (validateFields()) {
-            formSuccess.textContent = 'Form submitted successfully!';
-            form.reset();
+            formSuccess.textContent = 'Success! Check your email.';
+            formSuccess.classList.add('visible');
+            
+            fullName.value = '';
+            email.value = '';
         }
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    loadComponent('header', 'components/header.html');
-    loadComponent('hero', 'components/hero.html');
-    loadComponent('about-us', 'components/about-us.html');
-    loadComponent('section-lavique', 'components/section-lavique.html');
-    loadComponent('section-kevyn', 'components/section-kevyn.html');
-    loadComponent('section-esdras', 'components/section-esdras.html');
-    loadComponent('text-members', 'components/text-members.html');
-    loadComponent('progress', 'components/progress.html');
-    loadComponent('footer', 'components/footer.html');
 
-    loadComponent('form-contact', 'components/form-contact.html', initContactForm);
-});
+
