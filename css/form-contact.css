@@ -1,0 +1,69 @@
+.member-section.contact-section {
+    background: linear-gradient(180deg, var(--blue), var(--blue-2));
+}
+
+.member-container.contact-container {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+    display: grid;
+    gap: 1.5rem;
+    width: min(600px, 90vw);
+}
+
+.contact-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-form .form-group {
+    display: grid;
+    gap: 0.3rem;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.contact-form input {
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius);
+    border: 1px solid #e5e7eb;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.contact-form input:focus {
+    border-color: var(--blue-2);
+}
+
+.contact-form button {
+    padding: 0.7rem 1.2rem;
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: var(--blue-2);
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.success-message {
+    color: green;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
