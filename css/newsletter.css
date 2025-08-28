@@ -1,15 +1,17 @@
-.member-section.contact-section {
-    background: linear-gradient(180deg, var(--blue), var(--blue-2));
+.newsletter-section {
+    background: var(--white);
 }
 
-.member-container.contact-container {
-    background: var(--white);
+.newsletter-container {
+    background: linear-gradient(180deg, var(--blue), var(--blue-2));
     padding: 2rem;
+    margin: 5% auto;
     border-radius: var(--radius);
     box-shadow: var(--card-shadow);
     display: grid;
     gap: 1.5rem;
-    width: min(600px, 90vw);
+    width: min(1000px, 90vw);
+    color: var(--white);
 }
 
 .contact-form {
@@ -24,7 +26,7 @@
 
 .contact-form label {
     font-weight: 600;
-    color: var(--blue);
+    color: var(--white);
 }
 
 .contact-form input {
@@ -37,13 +39,13 @@
 }
 
 .contact-form input:focus {
-    border-color: var(--blue-2);
+    border-color: var(--white);
 }
 
 .contact-form button {
     padding: 0.7rem 1.2rem;
-    background: var(--blue);
-    color: var(--white);
+    background: var(--white);
+    color: var(--blue);
     font-weight: 600;
     border: none;
     border-radius: var(--radius);
@@ -52,7 +54,8 @@
 }
 
 .contact-form button:hover {
-    background: var(--blue-2);
+    background: var(--blue);
+    color: var(--white);
     transform: translateY(-2px);
 }
 
@@ -63,7 +66,22 @@
 }
 
 .success-message {
+    background-color: var(--white);
+    border-radius: var(--radius);
     color: green;
     font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
     margin-top: 0.5rem;
+    font-weight: 600;
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    display: inline-block; /* Faz com que o bloco se comporte como um inline */
+    visibility: hidden; /* Inicialmente escondido */
+    opacity: 0; /* Deixa invisível, mas ocupa espaço */
+    transition: opacity 0.3s ease;
 }
+
+.success-message.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
