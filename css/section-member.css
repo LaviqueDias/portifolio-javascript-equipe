@@ -193,3 +193,7 @@
         height: 72px
     }
 }
+
+.lavique {
+    background: url('../assets/images/section-lavique/image-lavique.jpg') center/cover no-repeat;
+}
