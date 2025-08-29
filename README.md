@@ -33,7 +33,7 @@ README.md       → project description
 - Implementation of a **Back to Top** button with smooth scrolling
 - **Form validation** for the newsletter section
 
-## How to Run
+## ▶️ How to Run
 
 1. Clone this repository:
     ```bash
