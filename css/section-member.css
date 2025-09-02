@@ -157,6 +157,10 @@
 }
 
 .project-tech li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
     font-size: .8rem;
     background: #f3f4f6;
     border: 1px solid #e5e7eb;
